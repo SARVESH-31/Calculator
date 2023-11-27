@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1 class="calculator-heading">CALCULATOR</h1>
+  <div class="calculator">
+    <form>
+      <div class="display">
+        <input type="text" id="txt" name="display" readonly>
+      </div>
+      <div>
+        <input type="button" value="AC" onclick="display.value = '' " class="operator">
+        <input type="button" value="DE" onclick="display.value =  display.value.toString().slice(0,-1)" class="operator">
+        <input type="button" value="." onclick="fun(this)" class="operator">
+        <input type="button" value="/" onclick="fun(this)" class="operator">
+      </div>
+      <div>
+        <input type="button" value="7" onclick="fun(this)">
+        <input type="button" value="8" onclick="fun(this)">
+        <input type="button" value="9" onclick="fun(this)">
+        <input type="button" value="*" onclick="fun(this)" class="operator">
+      </div>
+      <div>
+        <input type="button" value="4" onclick="fun(this)">
+        <input type="button" value="5" onclick="fun(this)">
+        <input type="button" value="6" onclick="fun(this)">
+        <input type="button" value="-" onclick="fun(this)" class="operator">
+      </div>
+      <div>
+        <input type="button" value="1" onclick="fun(this)">
+        <input type="button" value="2" onclick="fun(this)">
+        <input type="button" value="3" onclick="fun(this)">
+        <input type="button" value="+" onclick="fun(this)" class="operator">
+      </div>
+      <div>
+        <input type="button" value="00" onclick="fun(this)">
+        <input type="button" value="0" onclick="fun(this)">
+        <input type="button" value="=" onclick="cal()" class="equal operator">
+      </div>
+    </form>
+  </div>
+</div>
+<footer>
+  <p>This page is made with &#9829; by <strong>Sarvesh Kadam </strong> <a href="https://www.linkedin.com/in/sarvesh-kadam-8004b0260/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+</footer>
+</body>
+</html>
